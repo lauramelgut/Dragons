@@ -1,0 +1,92 @@
+<%- include('navbar') %>
+
+<div class="container-fluid index">
+  <div class="row">
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide col p-0"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active carrusel">
+          <a href="/dragon"
+            ><img
+              src="https://wallpaperaccess.com/full/2911346.jpg"
+              alt="..."
+              class="imgCarrusel"
+          /></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Bienvenido a Dragones</h1>
+            <h5>Únete a nosotros</h5>
+          </div>
+        </div>
+        <div class="carousel-item carrusel">
+          <a href="/trainer"
+            ><img
+              src="/images/bg2.jpg"
+              class="d-block w-100 imgCarrusel"
+              alt="entrenadores"
+          /></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Entrenadores</h1>
+            <h5>Listado de Entrenadores</h5>
+          </div>
+        </div>
+        <div class="carousel-item carrusel">
+          <a href="/dragon"
+            ><img
+              src="https://wallpapercave.com/wp/wp7293699.jpg"
+              class="imgCarrusel d-block w-100"
+              alt="dragones"
+          /></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Dragones</h1>
+            <h5>¡Conócelos a todos!</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<%- include('footer') %>

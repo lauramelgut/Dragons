@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Entrena a tu Dragón</title>
+    <!-- link de bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;800&family=Orbitron&family=Rajdhani:wght@300;500;700&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link de iconos de font awesome -->
+    <script
+      src="https://kit.fontawesome.com/155891f1ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- links de archivos css -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="/images/logo2.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- barra de navegación -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" href="/"
+        ><img class="logo" src="/images/logo2.jpg" alt="logo" height="45px;"
+      /></a>
+      <button
+        class="navbar-toggler invisible"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon bg-dark"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/trainer">Todos los Entrenadores</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/dragon"
+              >Nuestros Dragones <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/trainer">Entrenadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dragon/addDragonNavbar"
+              >Añadir Dragones</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/trainer/register">Registro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/trainer/login">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav
+      class="navbar navbar-expand-lg bg-dark justify-content-right barra-dos"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href=""> </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link bg-dark" href="/dragon"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bg-dark" href="/dragon/addDragonNavbar"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bg-dark" href="/trainer/register"></a>
+            </li>
+            <li class="nav-item login">
+              <a class="nav-link bg-dark" href="/trainer/login"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

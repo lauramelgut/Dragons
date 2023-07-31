@@ -1,0 +1,23 @@
+Bienvenido/a a Mi Aplicación Node.js!
+
+## Instrucciones para iniciar la aplicación
+
+1. Asegúrate de tener Node.js instalado en tu sistema. Puedes descargar la última versión desde https://nodejs.org/
+
+2. Clona este repositorio en tu máquina local.
+
+3. Abre una terminal y navega hasta el directorio raíz del proyecto.
+
+4. Ejecuta el siguiente comando para instalar las dependencias necesarias:
+
+npm install
+
+5. Una vez que las dependencias se hayan instalado correctamente, inicia la aplicación con el siguiente comando:
+
+npm start
+
+6. La aplicación se ejecutará en modo de desarrollo. Abre tu navegador web y visita la siguiente dirección:
+
+http://localhost:3000
+
+¡Listo! Ahora puedes comenzar a utilizar la aplicación.

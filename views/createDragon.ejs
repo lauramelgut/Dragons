@@ -1,0 +1,50 @@
+<%- include('navbar') %>
+<div class="container-fluid">
+  <div class="row cfCreaDr">
+    <div class="col-12 col-md-6 col-lg-4"></div>
+    <div class="col-12 col-md-6 col-lg-4 creaDr">
+      <form
+        action="/dragon/createDragon/<%- trainer_id %>"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="form-control form-control-lg my-3"
+          type="text"
+          placeholder="Nombre del Dragón"
+          aria-label=".form-control-lg example"
+          name="dragon_name"
+          required
+        />
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Descripción</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            name="description"
+          ></textarea>
+        </div>
+
+        <div class="my-3">
+          <label for="formFileLg" class="form-label">Foto de tu Dragón</label>
+          <input
+            class="form-control form-control-lg"
+            id="formFileLg"
+            type="file"
+            name="img"
+          />
+        </div>
+        <button type="submit" class="btn btn-success mb-3">
+          Guardar datos
+        </button>
+      </form>
+      <br /><br />
+    </div>
+    <div class="col-12 col-md-6 col-lg-4"></div>
+  </div>
+</div>
+<%- include('footer') %>

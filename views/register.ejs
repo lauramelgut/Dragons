@@ -1,0 +1,95 @@
+<%- include('navbar') %>
+<div class="container-fluid">
+  <div class="row fondo-reg">
+    <div class="col-12 col-md-2 col-lg-4"></div>
+    <div class="col-12 col-md-4 col-lg-4">
+      <form
+        action="/trainer/register"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="form-control form-control-lg my-3"
+          type="text"
+          placeholder="Nombre"
+          aria-label=".form-control-lg example"
+          name="name"
+          required
+        />
+        <input
+          class="form-control form-control-lg my-3"
+          type="text"
+          placeholder="Apellidos"
+          aria-label=".form-control-lg example"
+          name="last_name"
+        />
+        <input
+          class="form-control form-control-lg my-3"
+          type="email"
+          placeholder="Email"
+          aria-label=".form-control-lg example"
+          name="email"
+          required
+        />
+        <input
+          class="form-control form-control-lg my-3"
+          type="password"
+          placeholder="Introduce una contraseña"
+          aria-label=".form-control-lg example"
+          name="password"
+          required
+        />
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Descripción</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            name="description"
+          ></textarea>
+        </div>
+        <input
+          class="form-control form-control-lg my-3"
+          type="phone"
+          placeholder="Teléfono"
+          aria-label=".form-control-lg example"
+          name="phone"
+          required
+        />
+        <div class="my-3">
+          <label for="formFileLg" class="form-label"
+            >Introduce tu imagen de perfil</label
+          >
+          <input
+            class="form-control form-control-lg"
+            id="formFileLg"
+            type="file"
+            name="img"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary botonVerde mb-3">
+          Guardar datos
+        </button>
+      </form>
+      <br /><br />
+      <h3><%- message %></h3>
+    </div>
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="row youtube">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/XwBkvv_6SHM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="col-12 col-md-2 col-lg-4"></div>
+    </div>
+  </div>
+</div>
+<%- include('footer') %>

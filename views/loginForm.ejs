@@ -1,0 +1,40 @@
+<%- include('navbar') %>
+<div class="container-fluid cflogin">
+  <div class="row login">
+    <div class="col-12 col-md-2 col-lg-4"></div>
+    <div class="col-12 col-md-8 col-lg-4 ">
+      <form
+        action="/trainer/login"
+        method="post"
+        enctype="application/x-www-form-urlencoded"
+      >
+        <input
+          class="form-control form-control-lg my-3"
+          type="email"
+          placeholder="Email"
+          aria-label=".form-control-lg example"
+          name="email"
+          required
+        />
+        <input
+          class="form-control form-control-lg my-3"
+          type="password"
+          placeholder="Introduce una contraseña"
+          aria-label=".form-control-lg example"
+          name="password"
+          required
+        />
+        <button type="submit" class="btn btn-primary botonVerde mb-5">
+            Login
+          </button>
+       </div>
+      
+      </form>
+      <br /><br />
+      <h3><%- message %></h3>
+    </div>
+    
+    <div class="col-12 col-md-2 col-lg-4"></div>
+  </div>
+</div>
+<%- include('footer') %>

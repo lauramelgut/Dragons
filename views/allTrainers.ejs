@@ -1,0 +1,35 @@
+<%- include('navbar') %>
+
+<div class="container-fluid trainer">
+  <div class="row text-center">
+    <div class="col-12">
+      <h1 class="titulo text-center m-5">Todos nuestros Entrenadores</h1>
+    </div>
+    <div class="row">
+      <% result.forEach(trainer => { %>
+      <div
+        class="col-12 col-md-6 col-lg-4 d-flex justify-content-center cardtr"
+      >
+        <div class="card text-center border-success mb-4" style="width: 18rem">
+          <img
+            src="images/trainers/<%- trainer.photo %>"
+            class="card-tr-img-top my-4"
+            alt="cardTrainer"
+          />
+          <div class="card-body">
+            <h5 class="card-title"><%- trainer.name %></h5>
+            <br />
+            <a
+              href="trainer/oneTrainer/<%- trainer.trainer_id %>"
+              class="btn btn-outline-success my-2 p-1"
+              >Perfil y Dragones</a
+            >
+          </div>
+        </div>
+      </div>
+      <%})%>
+    </div>
+  </div>
+</div>
+
+<%- include('footer') %>

@@ -1,0 +1,491 @@
+@font-face {
+  font-family: 'FiraSansCondensed-Regular';
+  src: url('/fonts/FiraSansCondensed-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'FiraSansCondensed-Bold';
+  src: url('../fonts/FiraSansCondensed-Bold.ttf');
+  font-style: bold;
+  font-weight: 700;
+}
+.navbar{
+  font-family: 'FiraSansCondensed-Regular';
+  font-size: large;
+  padding: 0.1;
+}
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: white !important;
+  background-color: transparent;
+  border: var(--bs-border-width) solid white;
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
+.index{
+
+  background-color: black;
+  height: calc(100vh - 250px) ;
+  font-family: 'FiraSansCondensed-Regular';
+}
+.navbar-brand{
+  display: flex;
+  align-content: center;
+  padding: 0.1;
+}
+.carrusel{
+  height: 80vh;
+}
+.navbar-nav{
+  display:flex;
+  padding-right: 4vh;
+  
+}
+.navbarNav{
+  height: 20px !important ;
+}
+ .nav-link{
+  color: white !important;
+  
+}
+a:hover{ 
+  background-color:#85FB1E;
+  border-color: #85FB1E;
+}
+.logo{
+  padding-left: 20px;
+}
+.carousel-item{
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 277px)
+}
+
+/* Vista All Trainers */
+
+.titulo{
+  color: white;
+  text-align: center !important;
+  font-family: 'FiraSansCondensed-Regular';
+}
+.trainer{
+  background-image:url(/images/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'FiraSansCondensed-Regular';
+ 
+}
+.cardtr{
+  
+  object-fit: cover;
+  height: 90vh !important;
+}
+.card-tr-img-top{
+  height: 60vh;
+  object-fit: cover;
+  padding: 0 2vh;
+  background-position: center;
+}
+.div.car_body{
+  height: 40vh;;
+  text-align: center;
+}
+.btn-outline-success{
+  --bs-btn-border-color: #85FB1E;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #85FB1E;
+    --bs-btn-hover-border-color: #85FB1E;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #85FB1E;
+    --bs-btn-active-border-color: #85FB1E;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #85FB1E;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #85FB1E;
+  text-align: center;
+}
+/* Vista Todos los Dragones */
+
+.allDr{
+  background-image: url(/images/fondotrainers.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'FiraSansCondensed-Regular';
+  /* height: 200vh; */
+  
+}
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cdr{
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  
+}
+.justify-content-center1 {
+  justify-content: center!important;
+  height: 60vh;
+  display: flex;
+}
+.card-dr-img-top{
+
+  height: 30vh;
+  object-fit: cover;
+  padding: 0 2vh;
+  background-position: center;
+  background-size: cover;
+}
+.titulo{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+.btn-info{
+  background-color: #7afb08 !important;
+}
+
+/* Vista un entrenador */
+.trainer1{
+  height: 100%;
+background-image: url(https://wallpapers.com/images/hd/how-to-train-your-dragon-fireworks-sky-b7sbc54ti6f9piua.webp);
+background-size: cover;
+background-position: center;
+padding-top: 5vh;
+font-family: 'FiraSansCondensed-Regular';
+font-family: 'FiraSansCondensed-Bold';
+}
+.gradient-custom {
+  
+  background: #95f665;
+  background: -webkit-linear-gradient(to right bottom, rgb(174, 246, 101), rgb(249, 253, 133));
+
+  background-image: linear-gradient(215deg, #ffda4e 0, #ffe13b 5.56%, #ffe625 11.11%, #ffeb01 16.67%, #ffee00 22.22%, #e7f000 27.78%, #c8f000 33.33%, #a5f000 38.89%, #7bee00 44.44%, #3cea1d 50%, #00e635 55.56%, #00e14b 61.11%, #00dd61 66.67%, #00d978 72.22%, #00d58f 77.78%, #00d2a8 83.33%, #00cfc2 88.89%, #00cddc 94.44%, #00cbf6 100%);
+  }
+.col-lg-2 {
+  flex: 0 auto;
+ width: 50vh;
+}
+.card-bodytr{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-link{
+  color: black !important ;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 2px 0px 2px 3px #85fb1ec3;
+  border-radius: 21px;
+}
+
+.tarjetaPerfil{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 50vh;
+  width: 45vh;
+  
+}
+.card-dragons{
+  height: 80vh;
+  margin: 3vh;
+}
+.img-dr{
+  height: 25vh;
+  background-size: cover;
+ 
+  padding: 1vh;
+}
+.cb-dr{
+  height: 30vh;
+}
+.cb-dr h3{
+  height: 4vh;
+}
+.rdr{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 8vh;
+  padding: 3vh;
+}
+.cb-dr a{
+  align-items: baseline;
+  padding: 1;
+  margin: 1;
+    
+}
+.botonRojo{
+  background-color: #fb1e1ec3;
+--bs-btn-hover-bg: #fb1e1e;
+--bs-btn-border-color: white;
+--bs-btn-border-radius: 16px;
+--bs-btn-hover-border-color: white;
+--bs-btn-active-bg: #fb0808;
+--bs-btn-active-border-color: white;
+}
+
+/* Vista edit dragon */
+.editDragon{
+  background-image: url(../images/bg4.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+/* Vista edit trainer */
+.editTrainer{
+  background-image: url(../images/fonfodragfly.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+/* Vista Registro */
+.fondo-reg{
+
+  background-image: url(../images/bg0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+  padding-top: 8vh;
+  font-family: 'FiraSansCondensed-Regular';
+ 
+  
+}
+.youtube{
+  display: flex;
+  align-items: center;
+  padding-top: 25%;
+  padding-left: 10%;
+ 
+}
+
+/* Vista Añadir Dragones */
+.cfCreaDr{
+  height: calc(100vh - 206px);
+  background-image: url(../images/fondoojos.jpg);
+  font-family: 'FiraSansCondensed-Regular';
+  
+}
+.creaDr{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ color: white;
+ font-size: x-large;
+}
+
+/* Vista Login */
+.cflogin{
+  background-color: black;
+  height: calc(100vh - 226px) ;
+  font-family: 'FiraSansCondensed-Regular';
+  background-image: url(https://images2.alphacoders.com/800/thumb-1920-80090.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 25%;
+
+}
+.botonVerde{
+background-color: #85fb1ec3;
+--bs-btn-hover-bg: #85FB1E;
+--bs-btn-border-color: white;
+--bs-btn-border-radius: 16px;
+--bs-btn-hover-border-color: white;
+--bs-btn-active-bg: #7afb08;
+--bs-btn-active-border-color: white;
+}
+
+/* Responsive MOVIL*/
+ @media (max-width: 390px){
+  /* Vista un entrenador */
+.imgCarrusel{
+  background-size: cover;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+.trainer1{
+background-image: url(https://wallpapers.com/images/hd/how-to-train-your-dragon-fireworks-sky-b7sbc54ti6f9piua.webp);
+background-size: cover;
+background-position: center;
+padding-top: 1vh;
+font-family: 'FiraSansCondensed-Regular';
+font-family: 'FiraSansCondensed-Bold';
+
+}
+
+.col-lg-2 {
+  flex: 0 auto;
+ width: 50vh;
+}
+.card-bodytr{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.perfil{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1vh;
+}
+.card-link{
+  color: black !important ;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 2px 0px 2px 3px #85fb1ec3;
+  border-radius: 21px;
+}
+.col-12 col-md-4 col-lg-8 card perfil mb-3{
+  height: 55vh;
+  width: 35vh;
+}
+.tarjetaPerfil{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 48vh;
+  width: 38vh;
+  padding: 8vh;
+  padding-top: 50vh;
+}
+.card-dragons{
+  height: 75vh;
+  margin: 3vh;
+  margin-top: 35vh;
+}
+.img-dr{
+  height: 29vh;
+  background-size: cover;
+ 
+  padding: 1vh;
+}
+.cb-dr{
+  height: 30vh;
+}
+.cb-dr h3{
+  height: 4vh;
+}
+.rdr{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 8vh;
+  padding: 3vh;
+}
+.cb-dr a{
+  align-items: baseline;
+  padding: 1;
+  margin: 1;
+    
+}
+
+}
+
+/* TABLET */
+@media (max-width: 768px) and (min-width:391px){
+  .imgCarrusel{
+    background-size: cover;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+  }
+    /* Vista un entrenador */
+.trainer1{
+  background-image: url(https://wallpapers.com/images/hd/how-to-train-your-dragon-fireworks-sky-b7sbc54ti6f9piua.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 1vh;
+  font-family: 'FiraSansCondensed-Regular';
+  font-family: 'FiraSansCondensed-Bold';
+  }
+  .col-lg-2 {
+    flex: 0 auto;
+   width: 50vh;
+  }
+  .card-bodytr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .perfil{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vh;
+  }
+  .card-link{
+    color: black !important ;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 2px 0px 2px 3px #85fb1ec3;
+    border-radius: 21px;
+  }
+  .col-12 col-md-4 col-lg-8 card perfil mb-3{
+    height: 55vh;
+    width: 35vh;
+  }
+  .tarjetaPerfil{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 48vh;
+    width: 38vh;
+    padding: 8vh;
+    padding-top: 50vh;
+  }
+  .card-dragons{
+    height: 75vh;
+    margin: 3vh;
+    margin-top: 35vh;
+  }
+  .img-dr{
+    height: 29vh;
+    background-size: cover;
+   
+    padding: 1vh;
+  }
+  .cb-dr{
+    height: 30vh;
+  }
+  .cb-dr h3{
+    height: 4vh;
+  }
+  .rdr{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 8vh;
+    padding: 3vh;
+  }
+  .cb-dr a{
+    align-items: baseline;
+    padding: 1;
+    margin: 1;
+  
+
+  }
+.login{
+  padding-top: 160vh;
+}
+}

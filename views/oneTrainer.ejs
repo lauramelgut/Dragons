@@ -1,0 +1,104 @@
+<%- include('navbar') %>
+<div class=" container-fluid justify-content-center trainer1">
+  <section class="vh-100  " >
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center  align-items-center h-100">
+        <div class="col col-lg-6 mb-4 mb-lg-0">
+          <div class="card mb-3" style="border-radius: .5rem;">
+            <div class="row g-0">
+              <div class="col-md-4 gradient-custom text-center text-white" style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                <img src="/images/trainers/<%- resultTrainer[0].photo %>"
+                  alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+                <h5><%- resultTrainer[0].name %></h5>
+                <p><%- resultTrainer[0].last_name %></p>
+                <a class="far fa-edit mb-5" href="/trainer/editTrainer/<%- resultTrainer[0].trainer_id %>"
+                class="card-link"
+                ></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body p-4">
+                  <h6>Más Información</h6>
+                  <hr class="mt-0 mb-4">
+                  <div class="row pt-1">
+                    <div class="col-6 mb-3">
+                      <h6>Email</h6>
+                      <p class="text-muted"><%- resultTrainer[0].email %></p>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <h6>Phone</h6>
+                      <p class="text-muted"><%- resultTrainer[0].phone %></p>
+                    </div>
+                  </div>
+                  <h6>Descripción</h6>
+                  <hr class="mt-0 mb-4">
+                  <div class="row pt-1">
+                    <div class="col-12 mb-3">
+                     
+                      <p class="text-muted"> <%- resultTrainer[0].description %></p>
+                    </div>
+                    
+                  </div>
+                  <div class="d-flex justify-content-start">
+                    <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
+                
+                    <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <a href="/trainer/logicDelete/<%- resultTrainer[0].trainer_id %>/<%- resultDragon.length %>"class="btn botonVerde m-1">Suprimir</a>
+                    <a href="/trainer/delete/<%- resultTrainer[0].trainer_id %>"class="btn botonVerde m-1">Eliminar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-12 col-md-2 col-lg-4"></div>
+    
+    <!-- Cards Dragones -->
+  <div class="row justify-content-center ">
+    <% resultDragon.forEach(dragon => { %>
+    <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex justify-content-center ">
+      <div
+        class="card card-dragons border-primary text-center"
+        style="width: 18rem"
+      >
+        <img
+          src="/images/dragons/<%- dragon.img %>"
+          class="card-img-top img-dr"
+          alt="..."
+        />
+        <div class="card-body cb-dr">
+          <h3 class="card-title"><%- dragon.dragon_name %></h3>
+          <p class="card-title"><%- dragon.description %></p>
+          <br />
+          <div class="row rdr">
+            <a
+              href="/dragon/editDragon/<%- dragon.dragon_id %>"
+              class="btn botonVerde m-1"
+              >Editar</a
+            >
+            <a
+              href="/dragon/logicDelete/<%- dragon.dragon_id %>/<%- dragon.trainer_id %>"
+              class="btn botonVerde m-1"
+              >Suprimir
+            </a>
+            <a
+              href="/dragon/delete/<%- dragon.dragon_id %>/<%- dragon.trainer_id %>"
+              class="btn botonRojo m-1"
+              >Eliminar</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+      <% }) %>
+    </div>
+
+  
+    <%- include('footer') %>
+  
+</section>
+</div>

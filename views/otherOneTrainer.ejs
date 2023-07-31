@@ -1,0 +1,53 @@
+<%- include('navbar') %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="col d-flex justify-content-center my-5">
+        <div class="card" style="width: 18rem">
+          <img
+            src="/images/trainers/<%- finalResult.photo %>"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title"><%- finalResult.name %></h5>
+            <p class="card-text"><%- finalResult.last_name %></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><%- finalResult.email %></li>
+            <li class="list-group-item"><%- finalResult.description %></li>
+            <li class="list-group-item"><%- finalResult.phone %></li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Editar</a>
+            <a href="#" class="card-link">Eliminar</a>
+            <a href="#" class="card-link">Borrado Lógico</a>
+            <a href="#">Añadir Dragón</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <% finalResult.dragonGroup.forEach(dragon => { %>
+    <div class="col-3 justify-content-center">
+      <div class="card" style="width: 18rem">
+        <img
+          src="images/dragons/<%- dragon.img %>"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title"><%- dragon.dragon_name %></h5>
+          <br />
+          <a href="#" class="btn btn-warning">Editar</a>
+          <a href="#" class="btn btn-danger">Eliminar</a>
+        </div>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+</div>
+
+<%- include('footer') %>
